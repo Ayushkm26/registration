@@ -36,6 +36,9 @@ app.post("/form",(req ,res)=>{
  console.log(users)
 
 })
+app.get("/show",(req,res)=>{
+    res.send(users);
+})
 
 app.listen(3000,()=>{
     console.log("server connected");
